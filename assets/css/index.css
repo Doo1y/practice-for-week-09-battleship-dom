@@ -1,1 +1,38 @@
 /* Your code here */
+
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+h1 {
+  margin: 0;
+}
+#board {
+  display: grid;
+  grid-template: repeat(9, 73px) / repeat(9, 73px);
+  justify-items: center;
+  align-items: center;
+}
+
+#board > div {
+  border: 1.5px solid black;
+  width: 66px;
+  height: 66px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+#reset {
+  margin-top: 10px;
+}
+
+#game-over-msg {
+  margin: 5px 0;
+}
